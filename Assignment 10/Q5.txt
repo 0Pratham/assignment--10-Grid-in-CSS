@@ -1,0 +1,43 @@
+Q -> Explain the difference between justify-items and justify-self using code examples.
+Ans ->  
+        JUSTIFY-ITEMS
+        Justify The justify-items property is set on the grid container to give child elements (grid items) alignment
+	 in the inline direction. inline direction is left to right( or Horizontal) and block direction is downward(or Vertical).
+	 Using this , we shift items(or child) according to need . Some of values of attribute are -> start , end , space-between , etc.
+		Code ->  
+	style.css 
+	      .container{
+			display : grid;
+			justify-content: space-between;
+		}
+	index.html
+		<body>
+			<div class="container";>
+				<div class="box boxA">A</div>
+				<div class="box boxB">B</div>
+		--> now in this there will be an space between 'A' and 'B' just like 'A' will get shift to left direction and 'B' will get
+			 shift towards right direction.
+
+	JUSTIFY-SELF
+	Justify The justify-self property is set on the particular child or at main container to give alignment to itself .
+	 in the inline direction . Using this , we shift items(or child) according to need . Some of values of attribute are -> start , end , stretch, etc.
+		Code ->  
+	style.css 
+	      .container{
+			display : grid;
+			height: 300px;
+           		width: 400px;
+		}
+	      .boxA{
+		    justify-self : right;
+			}
+	index.html
+		<body>
+			<div class="container";>
+				<div class="box boxA">A</div>
+				<div class="box boxB">B</div>
+		--> now in this boxA will be shifted in right side of boundary of main container .
+	
+
+
+	

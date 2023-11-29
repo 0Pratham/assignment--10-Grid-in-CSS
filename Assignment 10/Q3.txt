@@ -1,0 +1,13 @@
+Q -> Explain the use of grid-auto-row and grid-auto-column with code examples.
+Ans -> 
+	GRID-AUTO-ROW
+	The grid-auto-rows property sets a size for the rows in a grid container. This property affects only row size
+	Code -> 	display: grid;
+			grid-auto-rows: 150px;
+		This set the size of row to 150 pixel per row.
+
+	GRID-AUTO-COLUMN
+	The grid-auto-column property sets a size for the columns in a grid container. This property affects only column size.
+	Code -> 	display: grid;
+			grid-auto-columns: 150px;
+		This set the size of column to 150 pixel per column .
